@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Time</string>
+    <string name="musicwidget">音乐</string>
+    <string name="btmusicwidget">蓝牙音乐</string>
+    <string name="radiowidget">收音机</string>
+    <string name="timewidget">时间</string>
+</resources>

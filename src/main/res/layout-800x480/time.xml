@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/time_bg" android:layout_width="190px" android:layout_height="254px">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/timepart" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="44px">
+            <ImageView android:id="@+id/timehour_h" android:layout_width="24.8px" android:layout_height="52.8px" android:src="@drawable/time_n0" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/timehour_l" android:layout_width="24.8px" android:layout_height="52.8px" android:src="@drawable/time_n0" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/digital_colon" android:layout_width="12px" android:layout_height="66px" android:layout_marginLeft="3.2px" android:layout_marginRight="3.2px" android:src="@drawable/time_dot" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/timeminute_h" android:layout_width="24.8px" android:layout_height="52.8px" android:src="@drawable/time_n0" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/timeminute_l" android:layout_width="24.8px" android:layout_height="52.8px" android:src="@drawable/time_n0" android:scaleType="fitXY"/>
+        </LinearLayout>
+        <TextClock android:textSize="18.85px" android:textColor="#ffffff" android:gravity="center" android:id="@+id/week" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12px" android:singleLine="true" android:textAllCaps="false" android:format12Hour="EEEE" android:format24Hour="EEEE"/>
+        <TextView android:textSize="17.13px" android:textColor="#fff8ff" android:ellipsize="marquee" android:gravity="center" android:id="@+id/datainfo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12px" android:singleLine="true" android:layout_marginStart="3.2px" android:layout_marginEnd="3.2px"/>
+        <TextView android:textSize="18.85px" android:textColor="#ffffff" android:gravity="center" android:id="@+id/yearmonthdata" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.2px" android:singleLine="true" android:textAllCaps="false"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10px">
+            <ImageView android:id="@+id/img_btn_speed" android:layout_width="40px" android:layout_height="40px" android:src="@drawable/icon_speed" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/img_btn_vol" android:layout_width="40px" android:layout_height="40px" android:layout_marginLeft="16.8px" android:layout_marginRight="16.8px" android:src="@drawable/icon_vol" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/img_btn_light" android:layout_width="40px" android:layout_height="40px" android:src="@drawable/icon_light" android:scaleType="fitXY"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

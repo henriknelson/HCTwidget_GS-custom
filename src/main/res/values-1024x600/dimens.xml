@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widget_width">252px</dimen>
+    <dimen name="widget_height">345px</dimen>
+    <dimen name="widget_minwidth">50dp</dimen>
+    <dimen name="widget_minheight">120dp</dimen>
+    <dimen name="widget_alumb">137px</dimen>
+</resources>

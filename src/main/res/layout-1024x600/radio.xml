@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/radio_bg" android:layout_width="212px" android:layout_height="320px">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="51px">
+            <ImageView android:id="@+id/radio_band" android:layout_width="50px" android:layout_height="22px" android:src="@drawable/radio_fm1" android:scaleType="fitXY"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/radioalumb" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5px">
+                <ImageView android:id="@+id/radio_f1" android:visibility="gone" android:layout_width="23px" android:layout_height="48px" android:src="@drawable/radio_n0" android:scaleType="fitXY"/>
+                <ImageView android:id="@+id/radio_f2" android:layout_width="23px" android:layout_height="48px" android:src="@drawable/radio_n8" android:scaleType="fitXY"/>
+                <ImageView android:id="@+id/radio_f3" android:layout_width="23px" android:layout_height="48px" android:src="@drawable/radio_n7" android:scaleType="fitXY"/>
+                <ImageView android:id="@+id/dot" android:layout_width="13px" android:layout_height="48px" android:src="@drawable/radio_dot" android:scaleType="fitXY"/>
+                <ImageView android:id="@+id/radio_f4" android:layout_width="23px" android:layout_height="48px" android:src="@drawable/radio_n5" android:scaleType="fitXY"/>
+                <ImageView android:id="@+id/radio_f5" android:layout_width="23px" android:layout_height="48px" android:src="@drawable/radio_n0" android:scaleType="fitXY"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6px">
+                <ImageView android:id="@+id/radio_wave" android:visibility="gone" android:layout_width="76px" android:layout_height="81px" android:src="@drawable/radio_sel" android:scaleType="fitXY" android:layout_marginStart="6px"/>
+                <ImageView android:id="@+id/radio_dan" android:layout_width="40px" android:layout_height="18px" android:src="@drawable/radio_mhz" android:scaleType="fitXY"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/radio_bar" android:visibility="gone" android:layout_width="204px" android:layout_height="38px" android:layout_marginTop="10px" android:src="@drawable/radio_bar1" android:scaleType="fitXY"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="90px">
+            <ImageView android:id="@+id/radio_pre" android:visibility="invisible" android:layout_width="50px" android:layout_height="50px" android:src="@drawable/radio_pre" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/radio_power" android:layout_width="50px" android:layout_height="50px" android:src="@drawable/radio_power" android:scaleType="fitXY" android:layout_marginStart="19px"/>
+            <ImageView android:id="@+id/radio_next" android:visibility="invisible" android:layout_width="50px" android:layout_height="50px" android:src="@drawable/radio_next" android:scaleType="fitXY" android:layout_marginStart="19px"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

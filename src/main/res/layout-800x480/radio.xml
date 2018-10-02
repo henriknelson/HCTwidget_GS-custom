@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/radio_bg" android:layout_width="190px" android:layout_height="254px">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.8px">
+            <ImageView android:id="@+id/radio_band" android:layout_width="40px" android:layout_height="17.6px" android:src="@drawable/radio_fm1" android:scaleType="fitXY"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/radioalumb" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4px">
+                <ImageView android:id="@+id/radio_f1" android:visibility="gone" android:layout_width="18.4px" android:layout_height="38.4px" android:src="@drawable/radio_n0" android:scaleType="fitXY"/>
+                <ImageView android:id="@+id/radio_f2" android:layout_width="18.4px" android:layout_height="38.4px" android:src="@drawable/radio_n8" android:scaleType="fitXY"/>
+                <ImageView android:id="@+id/radio_f3" android:layout_width="18.4px" android:layout_height="38.4px" android:src="@drawable/radio_n7" android:scaleType="fitXY"/>
+                <ImageView android:id="@+id/dot" android:layout_width="10.4px" android:layout_height="38.4px" android:src="@drawable/radio_dot" android:scaleType="fitXY"/>
+                <ImageView android:id="@+id/radio_f4" android:layout_width="18.4px" android:layout_height="38.4px" android:src="@drawable/radio_n5" android:scaleType="fitXY"/>
+                <ImageView android:id="@+id/radio_f5" android:layout_width="18.4px" android:layout_height="38.4px" android:src="@drawable/radio_n0" android:scaleType="fitXY"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6px">
+                <ImageView android:id="@+id/radio_wave" android:visibility="gone" android:layout_width="60.8px" android:layout_height="64.8px" android:src="@drawable/radio_sel" android:scaleType="fitXY" android:layout_marginStart="4.8px"/>
+                <ImageView android:id="@+id/radio_dan" android:layout_width="32px" android:layout_height="14.4px" android:src="@drawable/radio_mhz" android:scaleType="fitXY"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/radio_bar" android:visibility="gone" android:layout_width="163.2px" android:layout_height="30.4px" android:layout_marginTop="8px" android:src="@drawable/radio_bar1" android:scaleType="fitXY"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="72px">
+            <ImageView android:id="@+id/radio_pre" android:visibility="invisible" android:layout_width="40px" android:layout_height="40px" android:src="@drawable/radio_pre" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/radio_power" android:layout_width="40px" android:layout_height="40px" android:src="@drawable/radio_power" android:scaleType="fitXY" android:layout_marginStart="15.2px"/>
+            <ImageView android:id="@+id/radio_next" android:visibility="invisible" android:layout_width="40px" android:layout_height="40px" android:src="@drawable/radio_next" android:scaleType="fitXY" android:layout_marginStart="15.2px"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

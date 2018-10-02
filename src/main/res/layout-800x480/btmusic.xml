@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/btmusic_bg" android:layout_width="190px" android:layout_height="254px">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/btmusicalumb" android:layout_width="@dimen/widget_alumb" android:layout_height="@dimen/widget_alumb" android:layout_marginTop="19px" android:src="@drawable/btmusic_alumb" android:scaleType="fitXY"/>
+        <TextView android:textSize="16px" android:textColor="#fff8ff" android:ellipsize="marquee" android:gravity="center" android:id="@+id/btmusicname" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3px" android:singleLine="true" android:layout_marginStart="3px" android:layout_marginEnd="3px"/>
+        <TextView android:textSize="14px" android:textColor="#fff8ff" android:ellipsize="marquee" android:gravity="center" android:id="@+id/btmusicinfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2px" android:singleLine="true" android:layout_marginStart="3px" android:layout_marginEnd="3px"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2px">
+            <TextView android:textSize="12px" android:textColor="#ffffff" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/btmusiccurtime" android:layout_width="35px" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="12px" android:textColor="#ffffff" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/btmusicdurtime" android:layout_width="35px" android:layout_height="wrap_content" android:layout_marginLeft="3px" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2px">
+            <ImageView android:id="@+id/btmusicpre" android:layout_width="50px" android:layout_height="50px" android:src="@drawable/btmusic_pre" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/btmusicplaypause" android:layout_width="50px" android:layout_height="50px" android:src="@drawable/btmusic_playpause" android:scaleType="fitXY" android:layout_marginStart="5px"/>
+            <ImageView android:id="@+id/btmusicnext" android:layout_width="50px" android:layout_height="50px" android:src="@drawable/btmusic_next" android:scaleType="fitXY" android:layout_marginStart="5px"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

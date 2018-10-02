@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="weather_condition">
+        <item>龙卷风</item>
+        <item>热带暴风雨</item>
+        <item>暴风</item>
+        <item>大雷雨</item>
+        <item>雷雨</item>
+        <item>雨加雪</item>
+        <item>雨加霰</item>
+        <item>低温雨雪</item>
+        <item>冻毛雨</item>
+        <item>毛毛雨</item>
+        <item>冻雨</item>
+        <item>阵雨</item>
+        <item>雨</item>
+        <item>阵雪</item>
+        <item>阵雪</item>
+        <item>大风雪</item>
+        <item>雪</item>
+        <item>冰雹</item>
+        <item>霰</item>
+        <item>尘霾</item>
+        <item>雾</item>
+        <item>薄雾</item>
+        <item>尘雾</item>
+        <item>微风</item>
+        <item>有风</item>
+        <item>寒冷</item>
+        <item>阴</item>
+        <item>多云</item>
+        <item>多云</item>
+        <item>局部多云</item>
+        <item>局部多云</item>
+        <item>晴</item>
+        <item>晴朗</item>
+        <item>夜间晴间多云</item>
+        <item>晴间多云</item>
+        <item>雨加冰雹</item>
+        <item>炎热</item>
+        <item>局部雷雨</item>
+        <item>零星雷雨</item>
+        <item>零星雷雨</item>
+        <item>大雨</item>
+        <item>零星阵雪</item>
+        <item>大雪</item>
+        <item>大风雪</item>
+        <item>局部多云</item>
+        <item>零星阵雨</item>
+        <item>零星阵雪</item>
+        <item>零星雷雨</item>
+    </array>
+</resources>

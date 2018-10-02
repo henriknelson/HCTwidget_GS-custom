@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:versionCode="1" android:versionName="1.0" package="com.microntek.hctwidget">
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:persistent="true" android:process="system" android:allowBackup="true">
+        <receiver android:label="@string/timewidget" android:name=".TimeWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.android.MTClauncher.action.INSTALL_WIDGETS"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIME_TICK"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="com.microntek.time.fresh"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/time_provider"/>
+        </receiver>
+        <receiver android:label="@string/musicwidget" android:name=".MusicWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.android.MTClauncher.action.INSTALL_WIDGETS"/>
+                <action android:name="com.microntek.music.report"/>
+                <action android:name="com.microntek.time.fresh"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/music_provider"/>
+        </receiver>
+        <receiver android:label="@string/radiowidget" android:name=".RadioWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.android.MTClauncher.action.INSTALL_WIDGETS"/>
+                <action android:name="com.microntek.radio.report"/>
+                <action android:name="com.microntek.time.fresh"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/radio_provider"/>
+        </receiver>
+        <receiver android:label="@string/btmusicwidget" android:name=".BtMusicWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.android.MTClauncher.action.INSTALL_WIDGETS"/>
+                <action android:name="com.microntek.btmusic.report"/>
+                <action android:name="com.microntek.time.fresh"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/btmusic_provider"/>
+        </receiver>
+    </application>
+</manifest>

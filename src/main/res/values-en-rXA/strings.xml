@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">[Ţîḿé one]</string>
+    <string name="sep">[/ one]</string>
+    <string name="default_week">[-- one]</string>
+    <string name="default_date">[--/-- one]</string>
+    <string name="default_city">[-- one]</string>
+    <string name="default_weather">[-- one]</string>
+    <string name="default_temp">[-- one]</string>
+    <string name="default_tempinfo">[-- one]</string>
+    <string name="no_weather">[ñå one]</string>
+    <string name="music_time_seg">[/ one]</string>
+    <string name="utilc">[°Ç one]</string>
+    <string name="utilf">[°F one]</string>
+    <string name="musicwidget">[Ḿûšîç one]</string>
+    <string name="btmusicwidget">[Å2ðþ one]</string>
+    <string name="radiowidget">[Ŕåðîö one]</string>
+    <string name="timewidget">[Ţîḿé one]</string>
+    <string name="leap_label">[闰 one]</string>
+    <string name="month_label">[月 one]</string>
+    <string name="lunar_day">[初十廿三 one two]</string>
+    <string name="lunar_numbers">[一二三四五六七八九十 one two]</string>
+</resources>
