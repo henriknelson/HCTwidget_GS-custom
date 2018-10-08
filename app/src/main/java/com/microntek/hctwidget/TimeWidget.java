@@ -58,8 +58,8 @@ public class TimeWidget extends AppWidgetProvider {
         // Use reflection to work with framework specific objects during runtime..
         try{
             Class userHandleClass = Class.forName("android.os.UserHandle");
-            Method getCallingUserIdMethod = userHandleClass.getDeclaredMethod("getCallingUserId",null);
-            Object callingUserIdObj = getCallingUserIdMethod.invoke(null, null);
+            Method getCallingUserIdMethod = userHandleClass.getDeclaredMethod("getCallingUserId",(Class[]) null);
+            Object callingUserIdObj = getCallingUserIdMethod.invoke(null, (Object[]) null);
             int callingUserId = (int) callingUserIdObj;
             Class smClass = Class.forName("android.os.storage.StorageManager");
             Method isUserKeyUnlockedMethod = smClass.getDeclaredMethod("isUserKeyUnlocked",int.class);
@@ -121,7 +121,8 @@ public class TimeWidget extends AppWidgetProvider {
         } else {
             widget.setTextViewText(R.id.yearmonthdata, new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
         }
-        widget.setOnClickPendingIntent(R.id.img_btn_speed, PendingIntent.getBroadcast(context, 0, new Intent("com.microntek.clear"), 0));
+
+        widget.setOnClickPendingIntent(R.id.img_btn_speed, PendingIntent.getBroadcast(context, 0, new Intent(android.provider.Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS), 0));
         widget.setOnClickPendingIntent(R.id.img_btn_vol, PendingIntent.getBroadcast(context, 0, new Intent("com.microntek.setVolume"), 0));
         widget.setOnClickPendingIntent(R.id.img_btn_light, PendingIntent.getBroadcast(context, 0, new Intent("com.android.intent.action.SHOW_BRIGHTNESS_DIALOG"), 0));
         appWidgetManager.updateAppWidget(appWidgetId, widget);
